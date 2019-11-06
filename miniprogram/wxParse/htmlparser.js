@@ -128,7 +128,6 @@ function HTMLParser(html, handler) {
 		if (closeSelf[tagName] && stack.last() == tagName) {
 			parseEndTag("", tagName);
 		}
-
 		unary = empty[tagName] || !!unary;
 
 		if (!unary)
