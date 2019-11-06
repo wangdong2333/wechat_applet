@@ -1,0 +1,8 @@
+var deleWrap = function() {
+  var reg = getRegExp("<br \/\>", "g");
+  var result = arguments[0].replace(reg, "")
+  return result;
+}
+module.exports = {
+  deleWrap: deleWrap
+}

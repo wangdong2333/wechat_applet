@@ -1,0 +1,31 @@
+
+<view id='container'>
+  <view class='header'>
+    <view class='classify'>
+      <button class='food'>美食</button>
+      <button class='science' bindtap="toScienceCollec">科普</button>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='recommend-item' wx:for="{{collectionFoods}}" bindtap='showDetail' data-sharecount='{{item.shareCount}}' data-starcount='{{item.starCount}}' data-viewcount="{{item.viewCount}}" data-classid="{{item.foodId}}">
+      <view>
+        <image class='main-bg' mode='widthFix' src="{{item.imgUrl}}"></image>
+      </view>
+      <view class='item-infor'>
+        <view class='title'>{{item.title}}</view>
+        <view class='material'>{{item.content}}</view>
+        <view class='remark'>
+          <view class='view common'>
+            <image src='/images/view.png' mode='widthFix'></image>{{item.viewCount}}
+          </view>
+          <view class='star common'>
+            <image src='/images/star.png' mode='widthFix'></image>{{item.starCount}}
+          </view>
+          <view class='share common'>
+            <image src='/images/share.png' mode='widthFix'></image>{{item.shareCount}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

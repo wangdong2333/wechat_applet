@@ -1,0 +1,11 @@
+<!--pages/photo/photo.wxml-->
+<view id='container'>
+  <image class='bg' mode='widthFix' src='../../images/iBg2.jpg'>
+  </image>
+  <view class='title'>
+    UploadImage
+  </view>
+  <view class='img-box'>
+    <image mode='widthfix' src='../../images/add4.png' bindtap='distinguishPhoto'></image>
+  </view>
+</view>

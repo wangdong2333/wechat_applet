@@ -1,0 +1,38 @@
+.star-share {
+  display: flex;
+  padding-top: 10px;
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.star-share .common{
+  width: 50%;
+  padding: 8px 0px 5px 0px;
+  border-radius: 5px;
+  position: relative;
+}
+.star-share .star{
+  background: #FD9128;
+  margin-right: 4px;
+}
+.star-share .share{
+  background: #F23030;
+}
+.star-share .common image{
+  width: 25px;
+  height: 25px;
+  margin-left: 100rpx;
+}
+.star-share .common text{
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  top: -7px;
+  left: 5px;
+}
+.star-share .share-btn{
+  width: 100%;
+  height: 100%;
+  top: -30px;
+}

@@ -1,0 +1,26 @@
+<!--pages/publish/publish.wxml-->
+<view id='container'>
+  <form class='upfile' bindsubmit="formSubmit">
+    <view class='add-img common' bindtap='addImg'>
+      <view>
+        <image class='img' mode="widthFix" src='../../images/img.png'></image>
+      </view>
+      <text>添加图片</text>
+    </view>
+    <view class='add-video common'>
+      <view>
+        <image class='video'mode='widthFix' src="../../images/video.png"></image>
+      </view>
+      <text>添加视频</text>
+    </view>
+    <view class='img-container'>
+      <view wx:for="{{imgs}}">
+        <image src='{{item}}' class='img'></image>
+      </view>
+    </view>
+    <textarea maxlength="-1" class='content' name="content" placeholder='此刻，你想说些什么...' value="{{content}}"></textarea>
+
+    <button class='submit-btn' form-type='submit'>发布</button>
+
+  </form>
+</view>

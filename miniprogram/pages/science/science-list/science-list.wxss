@@ -1,0 +1,42 @@
+/* pages/science-detail/science-detail.wxss */
+#container{
+  width: 100vw;
+  /* height: 100vh; */
+  background: #f0f3fa;
+  min-height:100%;
+}
+#container .title{
+  padding: 15px 0px 5px 0px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 550;
+  color: #06c1ae
+}
+
+.science-item{
+  display: flex;
+  padding: 9px 7px 0px 15px;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  position: relative;
+}
+
+.science-item .img{
+  width: 22px;
+  height: 22px;
+}
+.science-item .content{
+  color: #333;
+  font-size: 15px;
+  width: 560rpx;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.science-item .text{
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  bottom: 6px;
+  right: 3px;
+}

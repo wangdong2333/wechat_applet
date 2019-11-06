@@ -1,0 +1,19 @@
+<!--pages/profile/collection-science/collection-science.wxml-->
+<view id='container'>
+
+  <view class='header'>
+    <view class='classify'>
+      <button class='food'>美食</button>
+      <button class='science'>科普</button>
+    </view>
+  </view>
+  <view class='science-list'>
+    <view class='science-item' wx:for="{{scienceColletions}}" bindtap='showScienceDetail' data-id="{{item.scienceId}}">
+      <view class='content'>{{item.title}}</view>
+      <view>
+        <text class='text'>详情</text>
+        <image class='img' mode='widthFix' src='../../../images/arrow.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+/* pages/profile/collection/collection.wxss */
+page{
+  min-height:100%;
+}
+#container{
+  background: #fff;
+}
+.header .classify{
+  display: flex;
+}
+.classify button{
+  background: #06c1ae;
+  padding: 0px;
+  margin: 0px;
+  width: 49%;
+  color: #fff;
+}
+.classify .food{
+  margin-right: 3px;
+}
+
+.recommend-item {
+  display: flex;
+  margin-top: 1px;
+  padding-top: 3px;
+  background: #fff;
+}
+
+.recommend-item .main-bg {
+  width: 150px;
+  height: 150px;
+}
+
+.recommend-item .item-infor {
+  padding: 5px 1px 5px 5px;
+  width: 356rpx;
+}
+
+.recommend-item .title {
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 5px;
+  color: #333;
+}
+
+.recommend-item .material {
+  margin: 10px 0px;
+  color: #666;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.recommend-item .remark {
+  display: flex;
+  margin-top: 20px;
+}
+
+.recommend-item .common{
+  margin-right: 20px;
+  font-size: 13px;
+  color: #555;
+  position: relative;
+  display: flex;
+}
+
+.recommend-item .common image {
+  width: 17px;
+  height: 17px;
+  margin-right: 2px;
+  position: relative;
+  top: 0px;
+}
+.recommend-item .share image {
+  width: 13px;
+  height: 13px;
+  top: 3px;
+}

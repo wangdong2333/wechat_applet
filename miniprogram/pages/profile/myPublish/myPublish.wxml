@@ -1,0 +1,64 @@
+<!--pages/profile/myPublish/myPublish.wxml-->
+<!--pages/show/show.wxml-->
+<wxs module="foo">
+  var dealTime = function(timestamp) {
+    var time = parseInt(timestamp);
+    var date=getDate(time);
+    var M =
+      (date.getMonth() + 1 < 10 ?
+        "0" + (date.getMonth() + 1) :
+        date.getMonth() + 1);
+    var D = date.getDate() + 1;
+    return M + "月" + D + "日";
+  }
+  // 注意导出代码
+  module.exports = {
+    dealTime: dealTime
+  }
+</wxs>
+
+<view id='container'>
+  <view class='show-list'>
+    <view class='show-item' wx:for="{{myShowInfors}}">
+      <view class='show-head'>
+        <view class='author-img'>
+          <image mode='widthFix' src='{{item.authorImg}}'></image>
+        </view>
+        <view class='user-infor'>
+          <view class='author'>{{item.author}}</view>
+          <view class='show-infor'>
+            <view class="time">{{foo.dealTime(item.time)}}</view>
+            <view class='place'>{{item.position}}</view>
+          </view>
+        </view>
+      </view>
+      <view class='img-container'>
+        <view class='imgs' wx:for="{{item.imgs}}">
+          <image mode='widthFix' src='{{item}}'></image>
+        </view>
+      </view>
+
+      <view class='content-container'>
+        <view class='content'>{{item.content.content}}</view>
+      </view>
+
+      <view class='show-foot'>
+        <view class='good common'>
+          <image mode='widthFix' src='../../../images/good-s.png'></image>
+          <!-- <image wx:else mode='widthFix' src='../../../images/good.png'></image> -->
+          <text>{{item.goodCount}}</text>
+        </view>
+        <view class='share common'>
+          <image mode='widthFix' src='../../../images/share-s.png'></image>
+          <!-- <image wx:else mode='widthFix' src='../../../images/share.png'></image> -->
+          <text>{{item.shareCount}}</text>
+        </view>
+        <view class='remark common'>
+          <image mode='widthFix' src='../../../images/comment-s.png'></image>
+          <!-- <image wx:else mode='widthFix' src='../../../images/remark.png'></image> -->
+          <text>{{item.commentCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

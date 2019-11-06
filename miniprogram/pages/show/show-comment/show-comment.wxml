@@ -1,0 +1,30 @@
+<!--pages/show/show-comment/show-comment.wxml-->
+<wxs src="../../../utils/dealTime.wxs" module="tools" />
+<view id='container'>
+  <view class='comment-list'>
+    <view class='comment-item' wx:for="{{commentLists}}">
+      <view class='header'>
+        <view class='author-img'>
+          <image mode="widthFix" src='{{item.authorImg}}'></image>
+        </view>
+        <view class='author-infor'>
+          <view class='name'>{{item.author}}</view>
+          <view class='time'>{{tools.dealTime(item.time)}}</view>
+        </view>
+      </view>
+      <view class='content'>
+      {{item.commentContent}}
+      </view>
+    </view>
+  </view>
+  <view class='comment-box'>
+    <form bindsubmit="formSubmit">
+      <view class='input'>
+        <image class='pencil-icon' mode='widthFix' src='../../../images/pencil-icon.png'></image>
+        <input placeholder='随乐而起，有感而发' name="commentContent" value='{{commentContent}}'></input>
+        <image class='happy-icon' mode='widthFix' src='../../../images/happy-icon.png'></image>
+      </view>
+      <button class='submit-btn' form-type='submit'>发送</button>
+    </form>
+  </view>
+</view>

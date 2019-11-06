@@ -1,0 +1,46 @@
+<!--pages/show/show.wxml-->
+<wxs src="../../utils/dealTime.wxs" module="tools" />
+
+<view id='container'>
+  <view class='show-list'>
+    <view class='show-item' wx:for="{{showInfors}}">
+      <view class='show-head'>
+        <view class='author-img'>
+          <image mode='widthFix' src='{{item.authorImg}}'></image>
+        </view>
+        <view class='user-infor'>
+          <view class='author'>{{item.author}}</view>
+          <view class='show-infor'>
+            <view class="time">{{tools.dealTime(item.time)}}</view>
+            <view class='place'>{{item.position}}</view>
+          </view>
+        </view>
+      </view>
+      <view class='img-container'>
+        <view class='imgs' wx:for="{{item.imgs}}" wx:for-item="itemName">
+          <image mode='widthFix' src='{{itemName}}'  bindtap='previewImg' data-imgs="{{item.imgs}}" data-currentimg="{{itemName}}"></image>
+        </view>
+      </view>
+
+      <view class='content-container'>
+        <view class='content'>{{item.content.content}}</view>
+      </view>
+
+      <view class='show-foot'>
+        <view class='good common' bindtap='addGood'  data-id="{{item._id}}" data-goodCount="{{item.goodCount}}">
+          <image mode='widthFix' src='../../images/good-s.png'></image>
+          <text>{{item.goodCount}}</text>
+        </view>
+        <view class='share common'  bindtap='addShare'  data-id="{{item._id}}" data-shareCount="{{item.shareCount}}">
+          <image mode='widthFix' src='../../images/share-s.png'></image>
+          <button open-type="share" class='share-btn'></button>
+          <text>{{item.shareCount}}</text>
+        </view> 
+        <view class='remark common' bindtap='showComment'  data-id="{{item._id}}"  data-commentCount="{{item.commentCount}}">
+          <image mode='widthFix' src='../../images/comment-s.png'></image>
+          <text>{{item.commentCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

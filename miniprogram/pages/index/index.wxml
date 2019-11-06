@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<view id='container'>
+  <image class='img' src='../../images/bg4.jpg'></image>
+  <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">开启美食之旅</button>
+</view>

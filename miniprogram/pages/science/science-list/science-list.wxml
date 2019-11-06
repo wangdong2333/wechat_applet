@@ -1,0 +1,13 @@
+<!--pages/science-detail/science-detail.wxml-->
+<view id='container'>
+  <view class='title'>{{title}}</view>
+  <view class='science-list' wx:for="{{scienceList}}">
+    <view class='science-item'  bindtap='showScienceDetail' data-id="{{item.id}}">
+      <view class='content'>{{item.title}}</view>
+      <view>
+        <text class='text'>详情</text>
+        <image class='img' mode='widthFix' src='../../../images/arrow.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

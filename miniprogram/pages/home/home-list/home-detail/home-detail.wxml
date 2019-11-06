@@ -1,0 +1,52 @@
+<!--pages/home/home-list/home-detail/home-detail.wxml-->
+<import src='../../../../template/star-share.wxml'/>
+<wxs src="../../../../utils/deleWrap.wxs" module="deleteWrap" />
+
+<template name="item">
+  <view class='main-item'>
+    <view class='name'>{{mname}}</view>
+    <view class='num'>{{amount}}</view>
+    <image mode='widthFix' src='../../../../images/arrow.png'></image>
+  </view>
+</template>
+
+<view id='container'>
+  <view class='main-bg'>
+    <image mode='widthFix' src='{{detailInfor.pic}}'></image>
+  </view>
+  <view class='food-infor'>
+    <view class='title'>
+      {{detailInfor.name}}
+    </view>
+    <view class='author-infor'>
+      <view class='author'>{{detailInfor.name}}</view>
+      <view class='view common'>
+        <image src="../../../../images/view.png" mode='widthFix'></image>
+        <text>{{viewCount}}</text>
+      </view>
+      <view class='collection common'>
+        <image src='../../../../images/star.png' mode='widthFix'></image>
+        <text>{{starCount}}</text>
+      </view>
+    </view>
+    <view class='description'>
+        {{content}}
+    </view>
+
+    <view class='material'>
+      <view class='classfy'>主料：</view>
+      <view class='main-material'>
+        <template is="item" wx:for="{{detailInfor.material}}" data="{{...item}}"/>
+      </view>
+      <view class='classfy'>做法：</view>
+      <view class='methods' wx:for="{{detailInfor.process}}">
+        <view class='step'>步骤 {{index+1}}</view>
+        <view class='img'>
+          <image mode='widthFix' src='{{item.pic}}' bindtap='previewImg' data-pic="{{item.pic}}"></image>
+        </view>
+        <view class='step-infor'>{{index+1}}.{{deleteWrap.deleWrap(item.pcontent)}}</view>
+      </view>
+    </view>
+    <template is="star-share"/>
+  </view>
+</view>

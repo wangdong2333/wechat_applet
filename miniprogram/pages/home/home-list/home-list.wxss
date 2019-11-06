@@ -1,0 +1,2 @@
+/* pages/home/home/home-detail.wxss */
+@import '../../../template/home-detail-tem.wxss';

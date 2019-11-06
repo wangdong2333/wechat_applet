@@ -1,0 +1,22 @@
+<template name="home-detail">
+  <view class='recommend-item'>
+    <view>
+      <image class='main-bg' mode='widthFix' src="{{pic}}"></image>
+    </view>
+    <view class='item-infor'>
+      <view class='title'>{{name}}</view>
+      <view class='material'>{{content}}</view>
+      <view class='remark'>
+        <view class='view common'>
+          <image src='/images/view.png' mode='widthFix'></image>{{viewCount}}
+        </view>
+        <view class='star common'>
+          <image src='/images/star.png' mode='widthFix'></image>{{starCount}}
+        </view>
+        <view class='share common'>
+          <image src='/images/share.png' mode='widthFix'></image>{{shareCount}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

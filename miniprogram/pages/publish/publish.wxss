@@ -1,0 +1,47 @@
+/* pages/publish/publish.wxss */
+#container{
+  /* height: 100vh; */
+  background: #fff;
+}
+
+.upfile .common{
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0,0,0,.05);
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 5px;
+}
+.upfile image{
+  width: 40px;
+  height: 40px;
+}
+.upfile text{
+  margin-top: -28px;
+  color: #999;
+}
+.upfile .content{
+  clear: both;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+.upfile .submit-btn{
+  background: #06c1ae;
+  border-radius: 10px;
+  color: #efefef;
+}
+.img-container{
+  display: flex;
+  clear: both;
+  flex-wrap: wrap;
+}
+.img-container .img{
+  width: 50px;
+  margin: 8px;
+  height: 50px;
+}

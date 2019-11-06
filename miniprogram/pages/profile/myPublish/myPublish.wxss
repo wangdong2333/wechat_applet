@@ -1,0 +1,91 @@
+/* pages/profile/myPublish/myPublish.wxss */
+/* pages/show/show.wxss */
+#container{
+  margin: 3px 6px;
+}
+.show-list .author-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.show-list .author-img image{
+  width: 50px;
+  height: 50px;
+}
+.show-list .show-head{
+  display: flex;
+  background: #fff;
+  padding-top: 10px;
+}
+
+.show-head .user-infor{
+  padding: 2px 0px 5px 17px;
+}
+.user-infor .author{
+  font-size: 14px;
+  color: #333;
+}
+.user-infor .show-infor{
+  display: flex;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.user-infor .time{
+  margin-right: 15px;
+}
+
+.img-container{
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.img-container .imgs{
+  padding-top: 10px;
+}
+.img-container image{
+  margin-right: 4px;
+  width: 222rpx;
+  height: 222rpx;
+  display: block;
+  margin-top: -5px;
+  border: 1px solid #eee;
+}
+
+.content-container{
+  padding: 5px 0px;
+  text-indent: 55rpx;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+}
+.content-container .content{
+  color: #333;
+}
+.show-foot{
+  display: flex;
+  padding-bottom: 8px;
+  margin-bottom: 1px;
+  background: #fff;
+  justify-content: space-around;
+}
+.show-foot .common{
+  width: 25%;
+}
+.show-foot .common image{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 3px;
+  left: -2px;
+  opacity: .4;
+}
+.show-foot .common text{
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.show-foot .share image{
+  width: 13px;
+  height: 13px;
+}

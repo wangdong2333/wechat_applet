@@ -1,0 +1,85 @@
+/* pages/show/show-comment/show-comment.wxss */
+page{
+  background: #f0f3fa;
+}
+#container{
+  height: 100vh;
+}
+.comment-list{
+  padding: 5px;
+}
+.header{
+  display: flex;
+}
+.comment-item{
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.comment-item .content{
+  margin-left: 50px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  color: #333;
+}
+.header .author-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header .author-infor{
+  margin-left: 10px;
+}
+.author-infor .name{
+  color: #333;
+  font-size: 17px;
+}
+.author-infor .time{
+  color: #999;
+  font-size: 13px;
+}
+.header .author-img image{
+  width: 50px;
+  height: 50px;
+
+}
+.header .author-infor{
+  flex: 1;
+}
+
+
+.comment-box .pencil-icon{
+  width: 20px;
+  height: 20px;
+}
+.comment-box .happy-icon{
+  width: 20px;
+  height: 20px;
+}
+.comment-box {
+  position: fixed;
+  bottom: 0px;
+  padding: 8px 10px;
+}
+.comment-box .input{
+  display: flex;
+  border-bottom: 1px solid #dedede;
+}
+.comment-box .input input{
+  width: 500rpx;
+}
+.comment-box .submit-btn{
+  height: 27px;
+  padding: 0px;
+  width: 100rpx;
+  line-height: 27px;
+  position: absolute;
+  top: 3px;
+  right: -90rpx;
+  font-size: 15px;
+  color: #efefef;
+  background: #06c1ae;
+  margin-left: 10px;
+  text-align: center;
+}

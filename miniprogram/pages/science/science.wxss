@@ -1,0 +1,38 @@
+
+
+.science-list{
+
+  padding: 5px;
+  width: 100%;
+}
+.science-item{
+  float: left;
+  width: 46%;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 400rpx;
+}
+.science-item .img{
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+.science-item .title{
+  color: #333;
+  font-size: 18px;
+  padding: 5px
+}
+.science-item .descrip{
+  color: #999;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+.science-item .more{
+  background: #35d0c0;
+  padding: 5px;
+}

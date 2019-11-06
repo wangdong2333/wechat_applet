@@ -1,0 +1,29 @@
+<!--pages/science/science-list/science-detail/science-detail.wxml-->
+<import src='../../../../template/star-share.wxml'/>
+<import src="../../../../wxParse/wxParse.wxml"/>
+
+<view id='container'>
+  <!-- <view class='main-bg'>
+    <image mode='widthFix' src='../../../../images/food2.jpeg'></image>
+  </view> -->
+  <view class='food-infor'>
+    <view class='title'>
+      {{scienceDetail.title}}
+    </view>
+    <view class='author-infor'>
+      <view class='author'>{{scienceDetail.title}}</view>
+      <view class='view common'>
+        <image src="../../../../images/view.png" mode='widthFix'></image>
+        <text>12</text>
+      </view>
+      <view class='collection common'>
+        <image src='../../../../images/star.png' mode='widthFix'></image>
+        <text>23</text>
+      </view>
+    </view>
+    <view class='description'>
+      <template is="wxParse" class="articleStyle" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <template is="star-share"/>
+  </view>
+</view>

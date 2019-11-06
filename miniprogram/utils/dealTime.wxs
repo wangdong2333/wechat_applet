@@ -1,0 +1,14 @@
+var dealTime = function (timestamp) {
+  var time = parseInt(timestamp);
+  var date = getDate(time);
+  var M =
+    (date.getMonth() + 1 < 10 ?
+      "0" + (date.getMonth() + 1) :
+      date.getMonth() + 1);
+  var D = date.getDate();
+  return M + "月" + D + "日";
+}
+// 注意导出代码
+module.exports = {
+  dealTime: dealTime
+}

@@ -1,0 +1,60 @@
+/* pages/science/science-list/science-detail/science-detail.wxss */
+@import '../../../../template/star-share.wxss';
+@import "../../../../wxParse/wxParse.wxss";
+
+/* .main-bg image{
+  width: 100%;
+} */
+.food-infor{
+  padding: 10px;
+}
+.food-infor .title{
+  font-size: 21px;
+  font-weight: 800;
+  color: #333;
+  text-align: center;
+}
+.author-infor{
+  /* display: flex; */
+  margin-top: 14px;
+  position: relative;
+}
+.author-infor .author{
+  font-size: 13px;
+  color: #ccc;
+  margin-right: 15px;
+  width: 65%;
+}
+.author-infor .common{
+  /* margin-right: 15px; */
+  position: absolute;
+}
+.author-infor .view{
+  top: 0rpx;
+  right: 170rpx;
+}
+.author-infor .collection{
+  top: 0rpx;
+  right: 70rpx;
+}
+.author-infor .common image{
+  width: 17px;
+  height: 17px;
+  margin-right: 2px;
+}
+.author-infor .common text{
+  color: #ccc;
+  position: relative;
+  top: -2px;
+}
+.description{
+  margin-top: 10px;
+  color: #666;
+  /* margin-bottom: 15px; */
+  font-size: 16px;
+  text-indent: 25px;
+  margin-bottom: 47px;
+}
+.description .wxParse-img{
+  margin: 10px 0px;
+}
