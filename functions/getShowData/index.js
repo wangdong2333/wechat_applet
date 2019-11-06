@@ -15,7 +15,7 @@ exports.main = async (event, context) => {
 
   try {
     return await db.collection(databasename).doc(showid).update({
-       // data 传入需要局部更新的数据
+      // data 传入需要局部更新的数据
       data: {
         goodCount: goodcount
       }
