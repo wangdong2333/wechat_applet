@@ -5,7 +5,6 @@ cloud.init({
 })
 
 exports.main = (event, context,cb) => {
-  // 这里获取到的 openId、 appId 是可
   const { OPENID } = cloud.getWXContext()
 
   return {
