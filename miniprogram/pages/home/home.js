@@ -5,10 +5,8 @@ let utils = require("../../utils/util.js");
 const db = wx.cloud.database();
 
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  // 页面的初始数据
+  
   data: {
     // 热门分类数据列表
     menuList: [],

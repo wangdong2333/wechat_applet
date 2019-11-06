@@ -31,7 +31,6 @@ const scienceListUrl ="https://wxapi.hotapp.cn/proxy/?appkey=hotapp669046474&url
 const scienceDetailUrl ="https://wxapi.hotapp.cn/proxy/?appkey=hotapp669046474&url=http://route.showapi.com/90-88";
 
 
-
 export default{
   menuUrl,
   recommendListUrl,
